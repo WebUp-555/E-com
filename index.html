@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Japa<span class="red">nee</span></h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+   
+    <section class="shirts-section">
+  <h2>Our T-Shirts</h2>
+ 
+  <input type="text" id="searchInput" placeholder="search T-Shirts...."/>
+
+  <div class="scroll-controls">
+    <button class="scroll-btn left">⬅</button>
+    <button class="scroll-btn right">➡</button>
+  </div>
+
+  <div class="scroll-container" id="scrollContainer">
+    <div class="shirt-card">
+      <img src="images/t-shirt1.jpg" alt="Shirt 1" />
+      <p>Shirt 1</p>
+    </div>
+    <div class="shirt-card">
+      <img src="images/t-shirt2.jpg" alt="Shirt 2" />
+      <p>Shirt 2</p>
+    </div>
+    <div class="shirt-card">
+      <img src="images/t-shirt3.jpg" alt="Shirt 3" />
+      <p>Shirt 3</p>
+    </div>
+    <div class="shirt-card">
+      <img src="images/t-shirt4.png" alt="Shirt 4" />
+      <p>Shirt 4</p>
+    </div>
+    <div class="shirt-card">
+      <img src="images/t-shirt5.png" alt="Shirt 5" />
+      <p>Guts characture t-shirt</p>
+    </div>
+    <div class="shirt-card">
+      <img src="images/t-shirt6.png" alt="Shirt 6" />
+      <p>Shirt 6</p>
+    </div>
+    <div class="shirt-card">
+      <img src="images/t-shirt7.png" alt="Shirt 7" />
+      <p>Shirt 7</p>
+    </div>
+    <div class="shirt-card">
+      <img src="images/t-shirt8.png" alt="Shirt 8" />
+      <p>Shirt 8</p>
+    </div>
+    <!-- Add more shirt-card divs as needed -->
+  </div>
+   <p id="noResults" style="display: none; font-weight: bold; color: red; margin-top: 10px;">
+  No results found.
+</p>
+</section>
+  <!--home-->
+<section id="home">
+  <h1>Welcome to AnimeTees</h1>
+  <p>Epic T-Shirts for True Anime Fans</p>
+  <button onclick="scrollToSection('services')">Shop Now</button>
+</section>
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>AnimeTees was born from a love of anime fashion .We craft unique anime -inspired T-shirts desined
+      for fans who want to wear their passion
+    </p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Custom T-Shirts</li>
+      <li>Bulk Orders for Events</li>
+      <li>Artist Collaborations</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text"  placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AnimeTees. All rights reserved.</p>
+  </footer>
+
+<script src="script1.js" ></script>
+</body>
+</html>

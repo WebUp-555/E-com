@@ -1,0 +1,267 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Joseph Sans', sans-serif;
+ }
+
+ .hero{
+   
+   height: 100vh;
+   width: 100%;
+   background-image: url(webpage.2.png);
+   background-size: cover;
+   background-position: center;
+   padding: 0 10%;
+   box-sizing: border-box;
+  
+ }
+ nav{
+  position: sticky;
+  top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  z-index: 1000;
+
+ }
+ 
+.logo{
+   margin-top: 0;
+    color: white;
+    font-size: 28px;
+    font-family: 'Sawarabi Gohthic';
+
+}
+.logo .red{
+    color: #ea1538 !important;
+    font-family: 'Sawarabi Gohthic';
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover{
+    color: #ea1538;
+   
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.shirts-section {
+  padding: 40px 20px;
+  background-color: #111;
+}
+#searchInput{
+  width: 250px;
+  padding: 10px;
+  margin: 20PX 0;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+
+.shirts-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.scroll-controls {
+  margin-bottom: 10px;
+}
+
+.scroll-btn {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.shirt-card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  min-width: 180px;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+.shirt-card:hover{
+  transform: translate(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(225,225,225,0.1);
+}
+
+.shirt-card img {
+  width: 180px;
+  height: auto;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
+.shirt-card:hover img{
+  filter: brightness(1.2) drop-shadow(0 0 8px #ff0000);
+  transition: 0.3s ease;
+}
+
+.shirt-card p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Home Section */
+#home {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color:#121212 !important;
+  color:#f0f0f0;
+  background-image: none !important;
+  
+  
+}
+
+#home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #e63946;
+}
+
+#home p {
+ max-width: 800px;
+ margin: auto;
+ font-size: 1.1rem;
+ margin-bottom: 2rem;
+ line-height: 1.6;
+}
+
+/* About Section */
+#about {
+  padding: 4rem 2rem;
+  background-color: #121212;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #e63946;
+}
+
+#about p {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* Services Section */
+#services {
+  padding: 4rem 2rem;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+#services h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #e63946;
+}
+
+#services ul {
+  list-style: none;
+  padding: 0;
+}
+
+#services ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+#home button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#home button:hover {
+  background-color: #ff4e5e;
+}
+
+#contact {
+  padding: 4rem 2rem;
+  background-color: #121212;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #e63946;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 1rem;
+}
+
+#contact input,
+#contact textarea {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: #aaa;
+}
+
+#contact button[type="submit"] {
+  background-color: #e63946;
+  color: #fff;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#contact button[type="submit"]:hover {
+  background-color: #ff4e5e;
+}
